@@ -13,7 +13,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", handler)
 
-	// Get the port from the environment variable, default to 8080
+	// Get the port from the environment variable, default to 3000
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "3000"
